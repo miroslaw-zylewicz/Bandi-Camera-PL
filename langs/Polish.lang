@@ -1,0 +1,492 @@
+;
+; Auto generated file by doc2langs (bandicamera)
+; 
+; DO NOT MODIFY THIS FILE MANUALLY!!!
+; 
+; If you want to modify this file, please visit https://go.bandisoft.com/apptranslation for more information.
+;
+
+[GENERAL]
+LANG_NAME                               = Polski
+TRANSLATORS                             = Mirosław Żylewicz
+DLG_FONT_NAME                           = ICONTITLELOGFONT
+DLG_FONT_SIZE                           = 9
+
+
+[TEXT]
+TEXT_BUILDNO                            = kompilacja #
+TEXT_BETA                               = Beta
+TEXT_SKIN_OPEN_ERROR                    = Nie można otworzyć pliku skórki (błąd: ${str1})
+TEXT_FILE_SAVED                         = Przechwycono: ${str1}
+TEXT_CANT_OPEN_FILE                     = Nie można otworzyć pliku ${str1} : ${str2}
+TEXT_CANT_SAVE_FILE                     = Nie można zapisać pliku ${str1}
+TEXT_INVALID_TARGET_PATH                = Nie można zapisać pliku. Nieprawidłowy katalog docelowy.
+TEXT_ACCESS_DENIED                      = Nie można zapisać pliku. Brak uprawnień do zapisu w katalogu docelowym.
+TEXT_COPIED_TO_CLIPBOARD                = Skopiowano do schowka.
+TEXT_COPIED_TO_CLIPBOARD_FAIL           = Nie można skopiować do schowka.
+TEXT_SELECT_TARGET_PATH                 = Wybierz ścieżkę zapisu.
+TEXT_CANT_LAUNCH_EDITOR                 = Nie można otworzyć edytora.
+TEXT_COUNTDOWN                          = ${num1} sek
+TEXT_CONT_CAP_TIME                      = ${str1} sek
+TEXT_MONITOR_MENU                       = Przechwyć monitor ${index}
+
+TEXT_ASK_INIT_SETTING                   = Czy chcesz przywrócić ustawienia domyślne? BandiCamera zostanie uruchomiony ponownie.
+TEXT_MSG_REGHOTKEYFAILED                = Ten skrót klawiszowy jest już używany przez inny program.
+TEXT_MSG_UPDATE_DOWNLOAD_ERROR          = Nie można pobrać instalatora.
+
+TEXT_ASK_WEBVIEW_HELP                   = Ta funkcja jest niedostępna, ponieważ w systemie nie zainstalowano WebView2. Czy chcesz wyświetlić pomoc?
+
+TEXT_MESSAGEBOX_OK                      = OK
+TEXT_MESSAGEBOX_CANCEL                  = Anuluj
+TEXT_MESSAGEBOX_ABORT                   = Przerwij
+TEXT_MESSAGEBOX_RETRY                   = Spróbuj ponownie
+TEXT_MESSAGEBOX_IGNORE                  = Ignoruj
+TEXT_MESSAGEBOX_YES                     = Tak
+TEXT_MESSAGEBOX_NO                      = Nie
+TEXT_MESSAGEBOX_CONTINUE                = Kontynuuj
+
+TT_CAPTURE                              = Przechwyć i zapisz (${str1})
+TT_CLIPBOARD                            = Kopiuj do schowka
+TT_EDITOR                               = Uruchom edytor
+TT_SETTING                              = Ustawienia (F5)
+TT_OPEN_FOLDER                          = Otwórz folder (F2)
+TT_FIND_TARGET                          = Znajdź obszar do przechwycenia (${str1})
+TT_PIN                                  = Przypnij BandiCamera (Ctrl + A)
+TT_TOGGLE_SKIN_MODE                     = Przełącz tryb interfejsu
+TT_CAP_WEBPAGE                          = Przeglądaj internet
+TT_PRINT                                = Drukuj po przechwyceniu (${str1})
+TT_CONT_CAP                             = Automatyczne przechwytywanie
+TT_STOP_CONT_CAP                        = Zatrzymaj automatyczne przechwytywanie
+TT_SEL_CAP                              = Przechwyć wybrany obszar (${str1})
+
+TT_CONT_CAP_INC                         = Wydłuż czas między przechwyceniami
+TT_CONT_CAP_DEC                         = Skróć czas między przechwyceniami
+
+ERR_CANT_INIT_DXGI                      = DXGI jest niedostępne. Jeśli uruchomionych jest kilka instancji BandiCamera, zamknij je i spróbuj ponownie.\nZ powodu niewystarczających zasobów zamiast DXGI zostanie użyty GDI.
+
+[MENU]
+CMD_CAP_FULLSCREEN                      = Pełny ekran
+CMD_ABOUT                               = O programie
+CMD_HOMEPAGE                            = Strona internetowa
+CMD_COUNTDOWN                           = Opóźnienie (3 sek)
+CMD_SIZE_USER_INPUT                     = Niestandardowy
+CMD_FIND_TARGET                         = Znajdź obszar do przechwycenia
+CMD_SETTING                             = Ustawienia
+CMD_TOGGLE_SKIN_MODE                    = Przełącz tryb interfejsu
+CMD_FIND_WINDOW                         = Wybierz okno do przechwycenia
+CMD_OPEN_RECENT                         = Ostatnie pliki
+CMD_QUIT                                = Wyjdź
+
+[DIALOG]
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; GENERAL
+IDCANCEL                                = Anuluj
+IDOK                                    = OK
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[IDD_SETTING]
+IDD_SETTING                             = Ustawienia
+IDC_BTN_INIT                            = Resetuj
+
+[IDD_SETTING_GENERAL]
+IDC_STATIC_EDITOR                       = Edytor
+IDC_CHK_USE_BANDIPAINT                  = Użyj BandiPaint
+IDC_BTN_SET_EDITOR_FAST                 = Predefiniowane
+
+IDC_STATIC_GENERAL                      = Ustawienia ogólne
+IDC_CHK_ALWAYS_ON_TOP                   = Zawsze na wierzchu
+IDC_CHK_DO_UPDATE_CHECK                 = Sprawdź, czy jest dostępna najnowsza wersja
+IDC_CHK_DO_UPDATE_CHECK_BETA            = Sprawdź, czy jest dostępna najnowsza wersja testowa
+IDC_CHK_CAPTURE_CURSOR                  = Przechwyć kursor
+IDC_CHK_ESC_EXIT                        = Zamknij klawiszem ESC
+IDC_CHK_MOVE_TO_TRAY_WHEN_EXIT          = Po zamknięciu przenieś do zasobnika systemowego
+IDC_CHK_STARTUP_PROGRAM                 = Uruchom program w zasobniku systemowym
+
+[IDD_SETTING_SAVE]
+IDC_STATIC_FORMAT                       = Format obrazu
+IDC_RADIO_FORMAT_AUTO                   = Automatycznie wybierz format (PNG lub JPG)
+IDC_RADIO_FORMAT_PNG                    = PNG (optymalny dla prostych kształtów i tekstu)
+IDC_CHK_QUANT_PNG                       = 8-bitowy PNG (256 kolorów)
+IDC_RADIO_FORMAT_JPG                    = JPG (optymalny pod kątem złożonych obrazów)
+IDC_STATIC_TARGET_PATH                  = Ścieżka zapisu
+IDC_STATIC_FILENAME                     = Reguły nadawania nazw plikom
+IDC_STATIC_FILENAME_RULE_HELP           = %Y:Rok, %m:Miesiąc, %d:Dzień, %H:Godzina, %M:Minuta, %S:Sekunda, $num:Numer serii
+IDC_STATIC_FILENAME_RULE_COUNT          = Bieżący numer serii
+
+[IDD_SETTING_SHORTCUT]
+IDC_STATIC_SHORTCUT                     = Ustawienia skrótów klawiszowych
+IDC_CHK_ENABLE_SHORTCUT                 = Włącz skróty klawiszowe
+IDC_SHORTCUTDESC_CAPTURE                = Przechwyć
+IDC_SHORTCUTDESC_CLIPBOARD              = Kopiuj do schowka
+IDC_SHORTCUTDESC_EDITOR                 = Uruchom edytor
+IDC_SHORTCUTDESC_FIND                   = Znajdź obszar do przechwycenia
+IDC_SHORTCUTDESC_SELCAP                 = Przechwyć niestandardowy obszar
+IDC_SHORTCUTDESC_PRINT                  = Drukuj po przechwyceniu
+IDC_SHORTCUTDESC_SHOW                   = Pokaż BandiCamera
+IDC_SHORTCUTDESC_FULLCAP                = Przechwyć pełny ekran (bieżący monitor)
+IDC_CHK_ALARM_REG_SHORTCUT_FAIL         = Włącz powiadomienie, gdy rejestracja skrótu klawiszowego się nie powiedzie
+
+[IDD_SETTING_ETC]
+IDC_STATIC_ETC                          = Pozostałe ustawienia
+IDC_STATIC_JPEG_QUALITY                 = Jakość obrazu JPEG (1~100)
+IDC_CHK_COPY2CLIPBOARD_WHEN_CAPTURE     = Kopiuj wszystkie przechwycone obrazy do schowka
+IDC_CHK_CAPTURE_WHEN_FIND               = Automatycznie przechwyć po użyciu Znajdź obszar do przechwycenia
+IDC_STATIC_SEL_CAP_OPERATION            = Akcja po przechwyceniu wybranego obszaru
+IDC_RADIO_SELCAP_0                      = Zapisz plik
+IDC_RADIO_SELCAP_1                      = Kopiuj do schowka
+IDC_RADIO_SELCAP_2                      = Zapisz plik + Kopiuj do schowka
+IDC_STATIC_HDR_MODE                     = Ustawienia przechwytywania HDR
+IDC_CHK_CAPTURE_USE_DXGI_WHEN_HDR_ON    = Przechwyć za pomocą DXGI (jeśli włączono HDR)
+IDC_CHK_SAVE_SDR_AND_HDR_WHEN_HDR_ON    = Zapisz obraz HDR (jeśli włączono HDR)
+IDC_RADIO_HDR_FORMAT_JXR                = Format JXR
+IDC_RADIO_HDR_FORMAT_AVIF               = Format AVIF
+
+[IDD_SETTING_LANGUAGE]
+IDC_STATIC_LANGUAGE                     = Wybierz język
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[IDD_AUTOBROWSER_DIALOG]
+IDD_AUTOBROWSER_DIALOG                  = Przeglądaj internet
+IDC_BTN_CAPTURE                         = Przechwyć
+IDC_BTN_FOLDER                          = Folder
+IDC_BTN_GO                              = Idź
+IDC_CHK_HIDE_SCROLLBAR                  = Ukryj pasek przewijania
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[IDD_PRINT]
+IDD_PRINT                               = Drukowanie
+IDC_GROUP_PRINTER                       = Drukarka
+IDC_BTN_PRINTER_PROPERTY                = Właściwości
+IDC_CHK_ROTATE                          = Obróć
+IDC_CHK_FIT_IN                          = Dopasuj
+IDC_STATIC_ZOOM                         = Skala
+IDC_STATIC_MARGIN_L                     = Lewy margines
+IDC_STATIC_MARGIN_T                     = Górny margines
+IDC_STATIC_MARGIN_R                     = Prawy margines
+IDC_STATIC_MARGIN_B                     = Dolny margines
+IDC_STATIC_COPIES                       = Liczba kopii
+IDC_BTN_PRINT                           = Drukuj
+IDC_BTN_CLOSE                           = Anuluj
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[IDD_USER_SIZE]
+IDD_USER_SIZE                           = Niestandardowy
+IDC_STATIC_SETTING                      = Obszar do przechwycenia
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[IDD_ABOUTBOX]
+IDD_ABOUTBOX                            = O programie
+IDC_BTN_HOME                            = Strona internetowa
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[IDD_UPDATE]
+IDD_UPDATE                              = Aktualizacja BandiCamera
+IDC_STATIC_MESSAGE_1                    = Dostępna jest aktualizacja BandiCamera.
+IDC_STATIC_MESSAGE_2                    = Kliknij Aktualizuj, aby zainstalować najnowszą wersję.
+IDOK                                    = Aktualizuj
+IDCANCEL                                = Anuluj
+IDC_BTN_SETTING_UPDATE                  = Ustawienia
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[IDD_UPDATE_SETTING]
+IDD_UPDATE_SETTING                      = Ustawienia aktualizacji
+IDC_CHK_DO_UPDATE_CHECK                 = Sprawdź, czy jest dostępna najnowsza wersja
+IDC_CHK_DO_UPDATE_CHECK_BETA            = Sprawdź, czy jest dostępna najnowsza wersja testowa
+
+
+
+
+[SKIN]
+$TEXT_TITLE                             = BandiCamera
+$TEXT_SETTING_TITLE                     = Ustawienia
+
+$TEXT_ABOUT                             = O programie
+
+$TEXT_CAPTURE                           = Przechwyć
+$TEXT_OPEN_FOLDER                       = Otwórz
+$TEXT_CLIPBOARD                         = Kopiuj
+$TEXT_EDITOR                            = Edytor
+$TEXT_SEL_CAP                           = Wybierz
+$TEXT_CONT_CAP                          = Auto
+$TEXT_WEBPAGE                           = Internet
+$TEXT_PRINT                             = Drukuj
+$TEXT_SETTINGS                          = Ustawienia
+$TEXT_FIND_TARGET                       = Znajdź
+
+$TEXT_CONT_CAP_MSG                      = Trwa automatyczne przechwytywanie...
+$TEXT_CONT_CAP_TIME                     = Czas między przechwyceniami:
+$TEXT_CONT_CAP_MSG_MINI                 = Automatyczne przechwytywanie
+$TEXT_CONT_CAP_TIME_MINI                = Częstotliwość
+$TEXT_CONT_CAP_STOP                     = Zatrzymaj
+$TEXT_CONT_CAP_OPEN                     = Otwórz
+
+$TEXT_SETTINGTAB_GENERAL                = Ogólne
+$TEXT_SETTINGTAB_SAVE                   = Zapis
+$TEXT_SETTINGTAB_SHORTCUT               = Skróty klawiszowe
+$TEXT_SETTINGTAB_ETC                    = Pozostałe
+$TEXT_SETTINGTAB_LANGUAGE               = Język
+$TEXT_IDOK                              = OK
+$TEXT_SETTING_INIT                      = Resetuj
+
+
+$TEXT_EDIT_TITLE                        = BandiPaint
+
+$TEXT_EDIT_TOOL_FILE                    = Plik
+$TEXT_EDIT_TOOL_CANCEL                  = Anuluj
+$TEXT_EDIT_TOOL_ZOOM                    = 100%
+$TEXT_EDIT_TOOL_SAVE                    = Zapisz
+$TEXT_EDIT_MENU_ZOOM_FIT                = Dopasuj do ekranu\tCtrl+0
+$TEXT_EDIT_MENU_ZOOM_OUT                = Pomniejsz\tCtrl+-
+$TEXT_EDIT_MENU_ZOOM_IN                 = Powiększ\tCtrl+=
+$TEXT_EDIT_MENU_FILE_NEW_CANVAS         = Nowe płótno\tCtrl+N
+$TEXT_EDIT_MENU_FILE_NEW_WINDOW         = Nowe okno\tCtrl+Shift+N
+$TEXT_EDIT_MENU_FILE_LOAD_IMAGE         = Otwórz plik\tCtrl+O
+$TEXT_EDIT_MENU_FILE_OPEN_CUR_FOLDER    = Otwórz bieżący folder\tF2
+$TEXT_EDIT_MENU_FILE_COPY_CLIPBOARD     = Kopiuj do schowka\tCtrl+C
+$TEXT_EDIT_MENU_FILE_SAVE               = Zapisz\tCtrl+S
+$TEXT_EDIT_MENU_FILE_SAVE_AS            = Zapisz jako\tCtrl+Shift+S
+
+$TT_ZOOM_OUT                            = Pomniejsz (Ctrl+-)
+$TT_ZOOM_IN                             = Powiększ (Ctrl+=)
+
+$TEXT_EDIT_MODE_DRAW                    = Rysuj
+$TEXT_EDIT_MODE_FIGURE                  = Kształty
+$TEXT_EDIT_MODE_TEXT                    = Tekst
+$TEXT_EDIT_MODE_STICKER                 = Naklejka / Mozaika
+$TEXT_EDIT_MODE_CROP                    = Przytnij
+$TEXT_EDIT_MODE_RESIZE                  = Zmień rozmiar
+$TEXT_EDIT_MODE_BG                      = Tło
+$TEXT_EDIT_MODE_FILTER                  = Filtr
+
+$TT_DRAWTYPE_PENCIL                     = Ołówek
+$TT_DRAWTYPE_HIGHLIGHTER                = Zakreślacz
+$TT_DRAWTYPE_ERASER                     = Gumka
+$TT_DRAWTYPE_BUCKET                     = Wypełnij
+
+$TEXT_EDIT_DRAW_WIDTH                   = Szerokość
+$TEXT_EDIT_DRAW_COLOR                   = Kolor
+$TEXT_EDIT_DRAW_OPACITY                 = Krycie
+
+
+$TT_FIGURETYPE_LINE                     = Linia
+$TT_FIGURETYPE_LINE_ARROW               = Linia ze strzałką
+$TT_FIGURETYPE_FILL_ARROW               = Linia z wypełnioną strzałką
+$TT_FIGURETYPE_RECT                     = Prostokąt
+$TT_FIGURETYPE_ROUND_RECT               = Zaokrąglony prostokąt
+$TT_FIGURETYPE_CIRCLE                   = Okrąg
+$TT_FIGURETYPE_TRIANGLE                 = Trójkąt
+$TT_FIGURETYPE_STAR                     = Gwiazda
+
+$TEXT_EDIT_FIGURE_STROKE                = Obramowanie
+$TEXT_EDIT_FIGURE_STROKE_WIDTH          = Szerokość
+$TEXT_EDIT_FIGURE_STROKE_COLOR          = Kolor obramowania
+$TEXT_EDIT_FIGURE_STROKE_OPACITY        = Krycie
+
+$TEXT_EDIT_FIGURE_FILL                  = Wypełnienie
+$TEXT_EDIT_FIGURE_FILL_COLOR            = Kolor wypełnienia
+$TEXT_EDIT_FIGURE_FILL_OPACITY          = Krycie
+
+$TEXT_EDIT_FIGURE_ADVANCED              = Ustawienia zaawansowane
+
+$TEXT_EDIT_DRAW_ANTIALIAS               = Wygładzanie krawędzi
+$TEXT_EDIT_FIGURE_ANTIALIAS             = Wygładzanie krawędzi
+$TEXT_EDIT_BG_ANTIALIAS                 = Wygładzanie krawędzi
+
+$TEXT_EDIT_DRAW_HARDNESS                = Twardość
+$TEXT_EDIT_FIGURE_FEATHER               = Feather
+$TEXT_EDIT_BG_FEATHER                   = Feather
+
+$TEXT_EDIT_CROP                         = Przytnij
+$TEXT_EDIT_CROP_POS                     = Pozycja
+$TEXT_EDIT_CROP_SIZE                    = Rozmiar
+$TEXT_EDIT_CROP_RATIO                   = Proporcje
+$TEXT_EDIT_CROP_ROTATE                  = Obróć
+$TEXT_EDIT_CROP_BEFORE_SIZE             = Poprzedni rozmiar
+$TEXT_EDIT_CROP_AFTER_SIZE              = Aktualny rozmiar
+
+$TT_ROTATE_RIGHT                        = Obróć w prawo
+$TT_HORIZONTAL_FLIP                     = Obróć w poziomie
+$TT_VERTICAL_FLIP                       = Obróć w pionie
+
+$TEXT_EDIT_BG_RESET                     = Resetuj
+$TEXT_EDIT_BG_BKGND                     = Tło
+$TEXT_EDIT_BG_BKGND_RATIO               = Proporcje
+$TEXT_EDIT_BG_BKGND_MARGIN              = Margines
+$TEXT_EDIT_BG_BKGND_COLOR               = Kolor
+$TEXT_EDIT_BG_COLOR_TYPE                = Rodzaj koloru
+$TEXT_EDIT_BG_GRADIENT_DIR              = Kierunek gradientu
+
+$TT_EDIT_BG_GRADATION_TOPLEFT           = Lewa góra  → Prawy dół
+$TT_EDIT_BG_GRADATION_TOPRIGHT          = Prawa góra → Lewy dół
+$TT_EDIT_BG_GRADATION_TOPCENTER         = Góra → Dół
+$TT_EDIT_BG_GRADATION_MIDCENTER         = Lewo → Prawo
+
+$TEXT_EDIT_BG_BORDER                    = Obramowanie
+$TEXT_EDIT_BG_BORDER_COLOR              = Kolor obramowania
+$TEXT_EDIT_BG_BORDER_WIDTH              = Szerokość
+$TEXT_EDIT_BG_BORDER_OPACITY            = Krycie
+$TEXT_EDIT_BG_BORDER_ROUND_CORNER       = Zaokrąglenie rogów
+
+$TEXT_EDIT_BG_SHADOW                    = Cień
+$TEXT_EDIT_BG_SHADOW_COLOR              = Kolor cienia
+$TEXT_EDIT_BG_SHADOW_OPACITY            = Krycie
+$TEXT_EDIT_BG_SHADOW_BLUR               = Rozmycie
+$TEXT_EDIT_BG_SHADOW_DIR                = Kierunek
+$TEXT_EDIT_BG_SHADOW_DIST               = Odległość
+
+$TEXT_EDIT_BG_BEFORE_SIZE               = Poprzedni rozmiar
+$TEXT_EDIT_BG_AFTER_SIZE                = Aktualny rozmiar
+$TEXT_EDIT_BG_CANCEL                    = Anuluj
+$TEXT_EDIT_BG_APPLY                     = Zastosuj
+
+$TEXT_EDIT_SAVE_TITLE                   = Ustawienia zapisu obrazu
+$TEXT_EDIT_SAVE_OK                      = OK
+$TEXT_EDIT_SAVE_CANCEL                  = Anuluj
+$TEXT_EDIT_SAVE_CURRENT_FORMAT          = Bieżący format
+$TEXT_EDIT_SAVE_PNG_LEVEL               = Poziom kompresji (0-9)
+$TEXT_EDIT_SAVE_HDR_SETTING             = Ustawienia HDR
+$TEXT_EDIT_SAVE_YUV_SETTING             = Ustawienia YUV
+$TEXT_EDIT_SAVE_AUTO                    = Auto
+$TEXT_EDIT_SAVE_QUALITY_RANGE           = Jakość (100 = najlepsza)
+$TEXT_EDIT_SAVE_JXR_QUALITY             = Jakość (1 = najlepsza)
+$TEXT_EDIT_SAVE_MAX_THREAD              = Liczba wątków (1–4)
+$TEXT_EDIT_SAVE_SPEED                   = Szybkość kompresji (0-10)
+$TEXT_EDIT_SAVE_ESTIMATED_SIZE          = Szacowany rozmiar pliku:
+$TEXT_EDIT_SAVE_IMAGE_SIZE              = Rozmiar obrazu
+
+$TEXT_EDIT_COLOR_TITLE                  = Próbnik kolorów
+$TEXT_EDIT_COLOR_NOCOLOR                = Brak koloru
+
+$TEXT_EDIT_NEW_TITLE                    = Nowe płótno
+$TEXT_EDIT_NEW_OK                       = OK
+$TEXT_EDIT_NEW_CANCEL                   = Anuluj
+$TEXT_EDIT_NEW_PROMPT                   = Wprowadź rozmiar płótna (szerokość × wysokość)
+$TEXT_EDIT_NEW_WIDTH                    = Szerokość
+$TEXT_EDIT_NEW_HEIGHT                   = Wysokość
+$TEXT_EDIT_NEW_INVALID_INPUT_TITLE      = Nieprawidłowa wartość
+$TEXT_EDIT_NEW_INVALID_INPUT            = Wprowadź poprawne wymiary (1-10000)
+$TEXT_EDIT_NEW_CURRENT                  = Aktualne płótno
+$TEXT_EDIT_NEW_CANVAS_TEMPLATE          = Szablon płótna
+$TT_EDIT_NEW_LOCK_RATIO                 = Zablokuj współczynnik proporcji
+
+[IDD_EDIT]
+TEXT_EDIT_TITLE                         = BandiPaint
+TEXT_EDIT_TITLE_SAVE_ERROR              = Błąd zapisu
+TEXT_EDIT_TITLE_COPY_ERROR              = Błąd kopiowania
+TEXT_EDIT_TITLE_COLOR_PICKER            = Próbnik kolorów
+TEXT_EDIT_TITLE_FIGURE_PANEL            = Panel kształtów
+TEXT_EDIT_TITLE_DRAW_PANEL              = Panel rysowania
+TEXT_EDIT_TITLE_CROP_PANEL              = Panel przycinania
+TEXT_EDIT_TITLE_BG_PANEL                = Panel tła
+TEXT_EDIT_WARNING                       = Ostrzeżenie
+TEXT_EDIT_MSG_FILE_ALREADY_EXIST        = Ten plik już istnieje.\nCzy chcesz go zastąpić?
+TEXT_EDIT_MSG_SAVE_SETTINGS_FAILED      = Zapis do settings.ini nie powiódł się
+TEXT_EDIT_MSG_COPY_TO_CLIPBOARD_FAILED  = Kopiowanie do schowka nie powiodło się
+TEXT_EDIT_MSG_EDITVIEWSKIN_NOT_FOUND    = Nie znaleziono EditViewSkin
+TEXT_EDIT_MSG_EDITVIEW_NOT_FOUND        = Nie udało się pobrać EditView z EditViewSkin
+TEXT_EDIT_MSG_CHILD_SKIN_COLOR_NOT_FOUND= Nie znaleziono ID_CHILDSKIN_COLOR
+TEXT_EDIT_MSG_PANEL_FIGURE_NOT_FOUND    = Nie znaleziono PANEL_FIGURE
+TEXT_EDIT_MSG_PANEL_DRAW_NOT_FOUND      = Nie znaleziono PANEL_DRAW
+TEXT_EDIT_MSG_PANEL_CROP_NOT_FOUND      = Nie znaleziono PANEL_CROP
+TEXT_EDIT_MSG_PANEL_BG_NOT_FOUND        = Nie znaleziono PANEL_BG
+TEXT_EDIT_MSG_CAPTURE_FAILED            = Przechwytywanie nie powiodło się
+TEXT_EDIT_MSG_SAVE_CONFIRM              = Istnieją niezapisane zmiany. Czy chcesz je zapisać?
+TEXT_EDIT_MENU_LOGO_MINIMIZE            = Minimalizuj
+TEXT_EDIT_MENU_LOGO_MAXIMIZE            = Maksymalizuj
+TEXT_EDIT_MENU_LOGO_RESTORE             = Przywróć
+TEXT_EDIT_MENU_LOGO_CLOSE               = Zamknij
+TEXT_EDIT_MENU_ZOOM_FIT                 = Dopasuj do ekranu
+TEXT_EDIT_CROP_RATIO_FREE               = Free Form
+TEXT_EDIT_CROP_RATIO_ORIGINAL           = Oryginał
+TEXT_EDIT_CROP_RATIO_SQUARE             = Kwadrat
+
+TEXT_EDIT_BG_BKGND_RATIO_FREE           = Własne proporcje
+TEXT_EDIT_BG_BKGND_RATIO_ORIGINAL       = Oryginalne proporcje
+TEXT_EDIT_BG_BKGND_RATIO_1_1            = 1:1
+TEXT_EDIT_BG_BKGND_RATIO_4_5            = 4:5 (Instagram)
+TEXT_EDIT_BG_BKGND_RATIO_5_4            = 5:4
+TEXT_EDIT_BG_BKGND_RATIO_3_4            = 3:4
+TEXT_EDIT_BG_BKGND_RATIO_4_3            = 4:3
+TEXT_EDIT_BG_BKGND_RATIO_16_9           = 16:9 (YouTube)
+TEXT_EDIT_BG_BKGND_RATIO_9_16           = 9:16
+TEXT_EDIT_BG_BKGND_RATIO_191_100        = 1.91:1 (LinkedIn)
+TEXT_EDIT_BG_BKGND_NOCOLOR              = Brak koloru
+TEXT_EDIT_BG_BKGND_SOLID                = Jednolity
+TEXT_EDIT_BG_BKGND_GRADIENT             = Gradient
+TEXT_EDIT_BG_GRADATION_TOPLEFT          = Lewa góra → Prawy dół
+TEXT_EDIT_BG_GRADATION_TOPRIGHT         = Prawa góra → Lewy dół
+TEXT_EDIT_BG_GRADATION_TOPCENTER        = Góra → Dół
+TEXT_EDIT_BG_GRADATION_MIDCENTER        = Lewo → Prawo
+
+TEXT_LOAD_IMAGE                         = Pliki obrazów
+TEXT_LOAD_ALLFILES                      = Wszystkie pliki
+
+[IDD_EDIT_SAVE]
+IDD_EDIT_SAVE                           = Opcje zapisu
+IDD_EDIT_SAVE_AVIF_AUTO                 = Auto
+IDD_EDIT_SAVE_CALCULATING               = Obliczanie...
+
+[IDD_EDIT_NEW]
+IDD_NEW_MANUAL_INPUT                    = Ręczne wprowadzanie
+IDD_NEW_INSTA_STORY                     = Instagram Story
+IDD_NEW_INSTA_SQUARE                    = Instagram Square
+IDD_NEW_INSTA_PORT                      = Instagram Portrait
+IDD_NEW_FB_SQUARE                       = Facebook Square
+IDD_NEW_FB_CARDNEWS                     = Facebook Cardnews
+IDD_NEW_FB_STORY                        = Facebook Story
+IDD_NEW_X_TWITTER                       = X (Twitter)
+IDD_NEW_LINKEDIN                        = LinkedIn
+IDD_NEW_YOUTUBE_THUMB                   = Youtube Thumbnail
+IDD_NEW_MS_STORE                        = MS Store
+IDD_NEW_APPSTORE                        = App Store
+IDD_NEW_STEAM                           = Steam
+IDD_NEW_CHROME_STORE                    = Chrome Web Store
+IDD_NEW_PRODUT_HUNT                     = Product Hunt
+IDD_NEW_GITHUB                          = GitHub
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; text for installer
+;
+[INSTALLER]
+$SETUP_TITLE                            = Zainstaluj ${APPNAME} ${APPVERSION}
+$UNINSTALL_TITLE                        = Odinstaluj ${APPNAME} ${APPVERSION}
+$UNINSTALL_STATIC                       = Kliknij Odinstaluj, aby rozpocząć odinstalowywanie.
+
+$BTN_CLOSE                              = Zamknij
+$BTN_CANCEL                             = Anuluj
+$BTN_INSTALL                            = Zaakceptuj i Zainstaluj
+$BTN_UNINSTALL                          = Odinstaluj
+$BTN_OPEN_LICENSE                       = [Wyświetl umowę licencyjną]
+
+$TEXT_PATH                              = Folder docelowy
+$TEXT_INSTALL_STATIC                    = Instalowanie...
+
+$CHK_AUTO_REPORT                        = Automatycznie wysyłaj statystyki użytkowania i raporty o awariach.
+
+ERR_CANT_CREATE_FOLDER                  = Nie udało się utworzyć folderu: ${str1}
+ERR_CANT_OPEN_FILE                      = Nie udało się otworzyć pliku: ${str1}
+ERR_CANT_WRITE_FILE                     = Nie udało się zapisać pliku: ${str1}
+ERR_BROKEN_ARCHIVE                      = Ten skompresowany plik jest uszkodzony: ${str1}
+ERR_CRC_ERROR                           = Błąd CRC: ${str1}
+ERR_NOT_ENOUGH_MEM                      = Brak pamięci: ${str1}
+
+MSG_FILE_OPEN_ERROR                     = Błąd otwierania pliku do zapisu na dysku:[br] "${str1}"[br]Kliknij Przerwij, aby przerwać instalację,[br]Ponów, aby spróbować ponownie lub [br]Ignoruj, aby pominąć ten plik.
+MSG_SUCCESS                             = Instalacja zakończona
+MSG_ERROR                               = Wystąpił błąd.
+MSG_SELECT_FOLDER                       = Wybierz folder.
+MSG_STILLRUN_EXIT_PROGRAM               = ${APPNAME} nadal jest uruchomiony. Najpierw zamknij program.
+MSG_NOT_SUPPORT_BELOW_WIN10             = Ten program działa tylko na Windows 10 i 11.
+MSG_NOT_SUPPORT_OS_DISABLE_AUTO_UPDATE  = Ten system operacyjny nie jest już obsługiwany.[br][br]Możesz nadal korzystać z tego programu w obecnej wersji, ale powiadomienia o aktualizacjach zostaną wyłączone.
+MSG_NEED_ADMIN_PRIVILEGE                = Ten program może zostać zainstalowany tylko przez użytkownika z uprawnieniami administratora.[br][br]Brak uprawnień administratora może uniemożliwić poprawną instalację.[br][br]Czy chcesz przerwać instalację?
+MSG_NEWVERSION_FOUND                    = Dostępna jest nowa wersja. Czy chcesz ją teraz pobrać?
+SHORTCUT_LINK_DESCRIPTOIN               = Uruchom ${APPNAME}.
+
